@@ -2,41 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-
+    <div class="titulo">
+    <title>Caesar Cipher</title>
+    </div>
   </head>
   <body>
     <div id="root"></div>
     <h1>Code Caesar</h1>
-    <div class="">
+    <div class="clave-content">
       <label id='text-move'>Clave</label>
       <input type="text" id="moveTo"/>
     </div>
-    <div class="">
+    <div class="message-content">
       <label id='text-mess'>Ingrese el mensaje</label>
       <input type="text" id="message"/>
     </div>
-<div class="">
-
-</div>
-        <div class="">
-      <label id='text-move-back'>Clave</label>
-      <input type="text" id="moveTo-back"/>
-    </div>
-    <div class="">
-      <label id='text-mess-hide'>Mensaje Oculto</label>
-      <input type="text" id="message-hide"/>
-    </div>
-    <div class="">
+  <div class="buttons-content">
       <button  id='btn-cipher' type="button">cifrar</button>
       <button  id='btn-decipher' type="button">decifrar</button>
     </div>
     <div class="">
       <label for="">Resultado : </label>
-      <input id="text-result" type="text" style="display:none"/>
+      <p></p>
+      <input id="text-result" type="text" />
     </div>
+    <footer class="footer">
 
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

@@ -1,21 +1,21 @@
 
 
-const btnCipher=document.getElementById('btn-cipher');
-const btnDecipher=document.getElementById('btn-decipher');
-const message=document.getElementById("message");
-const moveTo=document.getElementById("moveTo");
-const messageHide=document.getElementById("message-hide");
-const moveToBack=document.getElementById("moveTo-back");
-const textResult=document.getElementById("text-result");
+const btnCipher=document.getElementById('btn-cipher');//CIFRAR
+const btnDecipher=document.getElementById('btn-decipher');//DECIFRAR
+const message=document.getElementById("message");//MENSAJE A CIFRAR
+const moveTo=document.getElementById("moveTo");//DESPLAMIENTO
+const messageHide=document.getElementById("message-hide");//MENSAJE PARA decifrar
+const moveToBack=document.getElementById("moveTo-back");//DESPLAZAMIENTO
+const textResult=document.getElementById("text-result");//RESULTADOS
+
+
+
 function manejadorClick(){
-  console.log(typeof message.value)
-  console.log(typeof parseInt(moveTo.value))
-  Cifrar(message.value,parseInt( moveTo.value))
+
+  textResult.value=cipher.encode(message.value,parseInt( moveTo.value));
 }
 function manejadorClick2() {
-  console.log(typeof messageHide.value)
-  console.log(typeof parseInt(moveToBack.value))
-  decifrar(messageHide.value,parseInt( moveToBack.value))
+  textResult.value=cipher.decode(message.value,parseInt( moveTo.value));
 
 }
 btnCipher.addEventListener('click', manejadorClick)
@@ -25,7 +25,7 @@ btnDecipher.addEventListener('click', manejadorClick2)
 //-----------------------------------------------------------------//
 //-----------------------------------------------------------------//
 
-function Cifrar(word,des)
+function cifrar(word,des)
 {
   let newMessage="";
   for (let i = 0; i < word.length; i++) {
@@ -33,9 +33,7 @@ function Cifrar(word,des)
       let lettercipher=String.fromCharCode(numberAscii);
       newMessage=newMessage+lettercipher;
   }
-
-    document.getElementById('text-result').style.display='block';
-    document.write(newMessage);
+  return newMessage;
 }
 
 function decifrar(word,des)

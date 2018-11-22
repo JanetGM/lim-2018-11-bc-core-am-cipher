@@ -1,0 +1,90 @@
+body{
+background-image: url("https://dobmusic.com/wp-content/uploads/edd/2018/11/galaxy-11098_1280.jpg");
+
+}
+.title
+{
+  font-family: monospace,serif;
+  font-size: 20px;
+  padding: 50px;
+  background-color: black;
+  opacity: inherit;
+  color: white;
+}
+.message-content {
+    background-color: #85C1E9;
+    width: 500px;
+    border: 0px ;
+    padding: 25px;
+    margin-left:500px;
+    margin-top: 0px;
+    font-family: monospace ,serif;
+    color: white;
+
+}
+.clave-content
+{
+  background-color: #0E9371;
+  width: 500px;
+  border: 0px ;
+  padding: 25px;
+  margin-left:500px;
+  margin-top: 100px;
+  font-family: monospace,serif;
+
+}
+.buttons-content{
+  background-color: #A9CCE3;
+  width: 500px;
+  padding: 25px;
+  margin-left:500px;
+  margin-top: 0px;
+  font-family: monospace,serif;
+
+
+}
+#btn-cipher{
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 20px;
+width: 225px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-left: : 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+#btn-decipher
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px;
+  width: 225px;
+  cursor: pointer;
+  align-self: center;
+  border-radius: 5px;
+}
+.footer
+{
+background-color: black;
+}
+#message
+{
+width: 200px;
+padding: 50px;
+
+}
+#moveTo
+{
+width: 20px;
+padding: 10px;
+}
