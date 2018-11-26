@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 body{
-background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/05/11/351744/b28174bf49f03394f95316250572cccb.jpg");
-
+  background-color:white;
 }
 .titulo
 {
@@ -91,4 +90,9 @@ font-family: Chakra Petch,serif;
 width: 20px;
 padding: 10px;
 font-family: Chakra Petch,serif;
+}
+label
+{
+
+  display: block;
 }
