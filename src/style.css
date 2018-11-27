@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 body{
-background-color:white;
+background-color:#F9F8D6;
 background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009/dn8hj2o/aw0ogrmel/tumblr_static_437i1aqm00qo4kk8kgwoo8w4k_640_v2.jpg);
 background-repeat: no-repeat;
-margin-top: 100px;
+margin-top: 80px;
 
   }
   .image
   {
-    background-image: url(https://i.pinimg.com/originals/f7/1f/9e/f71f9ed67db46f832d52742dd51bc6c5.gif);
     padding: 400px;
     background-repeat: no-repeat;
     margin-left: 1100px;
@@ -18,6 +17,16 @@ margin-top: 100px;
     font-family: Chakra Petch,serif;
     margin-left: 800px;
     margin-top: 40px;
+  }
+  #start
+  {
+
+    background-color: #A3E4D7;
+    padding: 20px;
+    margin-left: 200px;
+    border:none;
+    font-family: Chakra Petch,serif;
+    font-size: 20px;
   }
 .titulo
 {
@@ -31,35 +40,38 @@ margin-top: 100px;
   text-align: center;
 }
 .message-content {
-    background-color: #F5BB3E;
+    color: #F5BB3E;
     width: 500px;
     border: 0px ;
     padding: 25px;
-    margin-left:800px;
+    margin-left:700px;
     margin-top: 0px;
     font-family: Chakra Petch,serif;
-    color:black;
-
 }
 .clave-content
 {
-  background-color:#707B7C;
+  background-color:#020836;
+  font-color=white;
   width: 500px;
   border: 0px ;
   padding: 25px;
-  margin-left:800px;
+  margin-left:700px;
   margin-top: 0px;
 font-family: Chakra Petch,bold;
+
+}
+#form1
+{
+display: none;
 
 }
 .buttons-content{
   background-color:#566573;
   width: 500px;
   padding: 25px;
-  margin-left:800px;
+  margin-left:700px;
   margin-top: 0px;
   font-family: Chakra Petch,serif;
-
 
 }
 #btn-cipher{

@@ -7,42 +7,41 @@
   </head>
   <body>
     <div id="root"></div>
-    <div class="titulo">
+    <div class="titulo" id="titulo-content">
     <h1>Welcome to Bottle Up</h1>
     </div>
-    <div class="instruction-content">
-      <p>Hey,this page code and decode message's
-      be smart and use it , read the instructions </p>
 
-      <ol>
-        <li>Enter your name</li>
-        <li>type you key ,the key must to be a number</li>
-        <li>Choose code or decode the message</li>
-      </ol>
-      
-    </div>
-    <div class="image">
-      <img src="" alt="">
-    </div>
-  <form id="Form-cipher" action="index.html" style=display:none>
-      <div class="clave-content">
-        <label id='text-move'>Clave</label>
+      <div class="instruction-content" id ="instruction">
+        <p>Hey,this page code and decode message's
+        be smart and use it , read the instructions </p>
+        <ol>
+          <li>Enter your name</li>
+          <li>type you key ,the key must to be a number</li>
+          <li>Choose code or decode the message</li>
+        </ol>
+          <button type="button" id="start">Start</button>
+      </div>
+
+<div id="form1"  >
+      <div id="clave" class="clave-content"   >
+        <label id="text-move">Clave</label>
         <input type="text" id="moveTo"/>
       </div>
-      <div class="message-content">
-        <label id='text-mess'>Ingrese el mensaje</label>
+      <div class="message-content" >
+        <label id="text-mess">Ingrese el mensaje</label>
         <input type="text" id="message"/>
       </div>
-    <div class="buttons-content">
-        <button  id='btn-cipher' type="button">cifrar</button>
-        <button  id='btn-decipher' type="button">decifrar</button>
+      <div class="buttons-content" >
+        <button  id="btn-cipher" type="button">cifrar</button>
+        <button  id="btn-decipher" type="button">decifrar</button>
       </div>
-      <div class="message-content">
+      <div class="message-content" >
         <label for="">Resultado : </label>
         <p></p>
         <input id="text-result" type="text" />
       </div>
-  </form>
+</div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
