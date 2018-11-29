@@ -4,15 +4,9 @@ encode: (word,des) =>
   {
     let newMessage="";
     for (let i = 0; i < word.length; i++) {
-        if (numberAscii===32){
           let numberAscii=((word[i].charCodeAt())-65+des)%26+65;
           let lettercipher=""+String.fromCharCode(numberAscii);
-        }
-        else
-        {
-          let numberAscii=((word[i].charCodeAt())-65+des)%26+65;
-          let lettercipher=String.fromCharCode(numberAscii);
-        }
+
         newMessage=newMessage+lettercipher;
     }
     return newMessage;
