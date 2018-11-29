@@ -5,18 +5,36 @@ background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009
 background-repeat: no-repeat;
 margin-top: 0px;
 float: left;
+margin: 0;
   }
+
+.encabezado ,.contenido,.contenido2,.pie-pagina
+{
+  padding: 0em 5em;
+}
+.contenido,.contenido2,.pie-pagina
+{
+  float: left;
+  box-sizing:border-box;
+}
+.encabezado
+{
+  height: 100%;
+}
+
   .image
   {
     padding: 400px;
     background-repeat: no-repeat;
     margin-left: 1100px;
     float: left;
+    height: 50%;
+    width: 50%;
   }
 .instruction-content
   {
     font-family: Chakra Petch,serif;
-    margin-left: 800px;
+    margin-left: 600px;
     margin-top: 80px;
     float: left;
   }
@@ -37,16 +55,17 @@ float: left;
 {
   margin-top: 0;
   font-family: Chakra Petch,serif;
-  font-size: 20px;
-  padding: 2%;
+  font-size: 30px;
+  padding: 0.5%;
   background-color:gray;
   opacity: inherit;
   color: white;
   align-content: center;
   text-align: center;
+  width: 98.4%;
 }
 .message-content {
-    background-color:#3D3F50;
+    background-color:#F0B27A;
     width: 500px;
     border: 0px ;
     padding: 25px;
@@ -56,7 +75,7 @@ float: left;
 }
 .clave-content
 {
-  background-color:#F08D40;
+  background-color:#F9E79F;
   font-color:white;
   width: 500px;
   border: 0px ;
@@ -72,18 +91,18 @@ display: none;
 
 }
 .buttons-content{
-  background-color:white;
+  background-color:#F0B27A;
   width: 500px;
   padding: 25px;
   margin-left:700px;
   margin-top: 0px;
   font-family: Chakra Petch,serif;
-
+  border-color: black;
 }
 #btn-cipher{
-background-color: #2471A3;
+background-color: rgb(227, 120, 30);
 border: none;
-color: white;
+color: black;
 padding: 20px;
 width: 225px;
 text-align: center;
@@ -96,9 +115,9 @@ border-radius: 5px;
 }
 #btn-decipher
 {
-  background-color: #2471A3;
+  background-color: rgb(227, 120, 30);
   border: none;
-  color: white;
+  color: black;
   padding: 20px;
   font-family: Chakra Petch,serif;
   text-align: center;
@@ -133,7 +152,7 @@ label
 {
   display: block;
 }
-@media screen and(min-width:780px) and(max-width:1024px)
+@media screen and(max-width:780px)
 {
   .titulo
   {
@@ -142,7 +161,10 @@ label
   .message-content{
     width: 50%;
   }
-
+  body
+  {
+    background-image: url(http://www.canalgif.net/Gifs-animados/Vehiculos-marinos/Botellas/Imagen-animada-Botella-05.gif);
+  }
 }
 @media screen and (min-width:480px)and(max-width:780px)
 {

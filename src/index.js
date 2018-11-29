@@ -29,6 +29,7 @@ function showCipherView()
 btnCipher.addEventListener('click', manejadorClick);
 btnDecipher.addEventListener('click', manejadorClick2);
 buttonStart.addEventListener('click',manejadorClick3);
+
 //-----------------------------------------------------------------//
 //-----------------------------------------------------------------//
 //-----------------------------------------------------------------//
