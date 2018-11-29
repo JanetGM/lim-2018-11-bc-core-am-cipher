@@ -3,70 +3,106 @@ body{
 background-color:white;
 background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009/dn8hj2o/aw0ogrmel/tumblr_static_437i1aqm00qo4kk8kgwoo8w4k_640_v2.jpg);
 background-repeat: no-repeat;
-margin-top: 100px;
-
+margin-top: 0px;
+float: left;
+margin: 0;
   }
+
+.encabezado ,.contenido,.contenido2,.pie-pagina
+{
+  padding: 0em 5em;
+}
+.contenido,.contenido2,.pie-pagina
+{
+  float: left;
+  box-sizing:border-box;
+}
+.encabezado
+{
+  height: 100%;
+}
+
   .image
   {
-    background-image: url(https://i.pinimg.com/originals/f7/1f/9e/f71f9ed67db46f832d52742dd51bc6c5.gif);
     padding: 400px;
     background-repeat: no-repeat;
     margin-left: 1100px;
+    float: left;
+    height: 50%;
+    width: 50%;
   }
 .instruction-content
   {
     font-family: Chakra Petch,serif;
-    margin-left: 800px;
-    margin-top: 40px;
+    margin-left: 600px;
+    margin-top: 80px;
     float: left;
+  }
+  #start
+  {
+
+    background-color:#F08D40;
+    padding: 20px;
+    width: 60%;
+    height: 10%;
+    margin-left:90px;
+    border:none;
+    margin-top: 10%;
+    font-family: Chakra Petch,serif;
+    font-size: 20px;
   }
 .titulo
 {
+  margin-top: 0;
   font-family: Chakra Petch,serif;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 30px;
+  padding: 0.5%;
   background-color:gray;
   opacity: inherit;
   color: white;
   align-content: center;
   text-align: center;
+  width: 98.4%;
 }
 .message-content {
-    background-color: #F5BB3E;
+    background-color:#F0B27A;
     width: 500px;
     border: 0px ;
     padding: 25px;
-    margin-left:800px;
+    margin-left:700px;
     margin-top: 0px;
     font-family: Chakra Petch,serif;
-    color:black;
-
 }
 .clave-content
 {
-  background-color:#707B7C;
+  background-color:#F9E79F;
+  font-color:white;
   width: 500px;
   border: 0px ;
-  padding: 25px;
-  margin-left:800px;
-  margin-top: 0px;
+  padding: 2%;
+  margin-left:700px;
+  margin-top: 5%;
 font-family: Chakra Petch,bold;
 
 }
-.buttons-content{
-  background-color:#566573;
-  width: 500px;
-  padding: 25px;
-  margin-left:800px;
-  margin-top: 0px;
-  font-family: Chakra Petch,serif;
-
+#form1
+{
+display: none;
 
 }
+.buttons-content{
+  background-color:#F0B27A;
+  width: 500px;
+  padding: 25px;
+  margin-left:700px;
+  margin-top: 0px;
+  font-family: Chakra Petch,serif;
+  border-color: black;
+}
 #btn-cipher{
-background-color: #2471A3;
+background-color: rgb(227, 120, 30);
 border: none;
-color: white;
+color: black;
 padding: 20px;
 width: 225px;
 text-align: center;
@@ -79,9 +115,9 @@ border-radius: 5px;
 }
 #btn-decipher
 {
-  background-color: #2471A3;
+  background-color: rgb(227, 120, 30);
   border: none;
-  color: white;
+  color: black;
   padding: 20px;
   font-family: Chakra Petch,serif;
   text-align: center;
@@ -100,19 +136,44 @@ background-color: black;
 }
 #message
 {
-width: 200px;
-padding: 50px;
+width: 60%;
+padding: 5%;
+height: 90%
 font-family: Chakra Petch,serif;
 
 }
 #moveTo
 {
-width: 20px;
+width: 4%;
 padding: 10px;
 font-family: Chakra Petch,serif;
 }
 label
 {
-
   display: block;
+}
+@media screen and(max-width:780px)
+{
+  .titulo
+  {
+    width: 50%;
+  }
+  .message-content{
+    width: 50%;
+  }
+  body
+  {
+    background-image: url(http://www.canalgif.net/Gifs-animados/Vehiculos-marinos/Botellas/Imagen-animada-Botella-05.gif);
+  }
+}
+@media screen and (min-width:480px)and(max-width:780px)
+{
+
+
+}
+
+@media screen and(max-width:480px)
+{
+
+
 }
