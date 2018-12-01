@@ -1,6 +1,6 @@
 window.cipher = {
 
-encode: (word,des) =>
+encode: (des,word) =>
   {
     let newMessage="";
     for (let i = 0; i < word.length; i++) {
@@ -12,7 +12,7 @@ encode: (word,des) =>
     return newMessage;
   },
 
-decode:(word,des)=>
+decode:(des,word)=>
   {
   let newMessage="";
   let range=(des%26);
