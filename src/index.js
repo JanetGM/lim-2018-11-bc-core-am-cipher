@@ -21,8 +21,8 @@ function manejadorClick3(){
 function showCipherView()
 {
   document.getElementById('instruction').style.display="none";
-  document.getElementById('titulo-content').style.display="none";
-  document.getElementById('form1').style.display="block";
+  document.getElementById('titulo-content').innerHTML="Bottle Up";
+  document.getElementById('contenidoDos').style.display="block";
 }
 
 
