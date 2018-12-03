@@ -9,10 +9,10 @@ const buttonStart=document.getElementById("start");//boton de empezar
 
 
 function manejadorClick(){
-  textResult.value=cipher.encode(message.value,parseInt( moveTo.value));
+  textResult.value=cipher.encode(parseInt( moveTo.value),message.value);
 }
 function manejadorClick2() {
-  textResult.value=cipher.decode(message.value,parseInt( moveTo.value));
+  textResult.value=cipher.decode(parseInt( moveTo.value),message.value);
 }
 
 function manejadorClick3(){
