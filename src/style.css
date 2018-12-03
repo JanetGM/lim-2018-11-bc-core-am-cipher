@@ -21,8 +21,7 @@ margin: 0;
 {
   height: 100%;
 }
-
-  .image
+.image
   {
     padding: 400px;
     background-repeat: no-repeat;
@@ -36,11 +35,10 @@ margin: 0;
     font-family: Chakra Petch,serif;
     margin-left: 600px;
     margin-top: 80px;
-    float: left;
+
   }
   #start
   {
-
     background-color:#F08D40;
     padding: 20px;
     width: 60%;
@@ -160,6 +158,11 @@ label
   }
   .message-content{
     width: 50%;
+
+  }
+  .instruction-content
+  {
+    margin-left: 0;
   }
   body
   {
