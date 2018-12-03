@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css" />
     <title>Caesar Cipher</title>
   </head>
@@ -13,33 +13,35 @@
               <h1>Welcome to Bottle Up</h1>
               </div>
       </header>
+      <aside class="contenido-lateral"></aside>
+
       <section class="contenido">
             <div class="instruction-content" id ="instruction">
               <p>Hey,this page code and decode message's
               be smart and use it , read the instructions </p>
               <ol>
-                <li>Enter your name</li>
+                <li>Read the instructions</li>
                 <li>type you key ,the key must be a number</li>
                 <li>Choose code or decode the message</li>
               </ol>
                 <button type="button" id="start">Start</button>
             </div>
-            <div class="contenido2">
-                    <div id="form1"  >
-                    <div id="clave" class="clave-content"   >
-                      <label for="moveTo">Clave</label>
-                      <input type="text" id="moveTo"/>
+            <div class="contenido2" id="contenidoDos">
+                    <div id="form1">
+                    <div id="clave" class="clave-content">
+                      <label for="moveTo">Key</label>
+                      <input type="number" id="moveTo" min="1"/>
                     </div>
                     <div class="message-content" >
-                      <label for="message">Ingrese el mensaje</label>
+                      <label for="message">Write the message :</label>
                       <input type="text" id="message"/>
                     </div>
                     <div class="buttons-content" >
-                      <button  id="btn-cipher" type="button">cifrar</button>
-                      <button  id="btn-decipher" type="button">decifrar</button>
+                      <button  id="btn-cipher" type="button">Code</button>
+                      <button  id="btn-decipher" type="button">Decode</button>
                     </div>
                     <div class="message-content" >
-                      <label for="text-result">Resultado : </label>
+                      <label for="text-result">Result:</label>
                       <p></p>
                       <input id="text-result" type="text" />
                     </div>
