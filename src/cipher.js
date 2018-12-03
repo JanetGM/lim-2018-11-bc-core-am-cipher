@@ -1,18 +1,18 @@
 window.cipher = {
 
-encode: (word,des) =>
+encode: (des,word) =>
   {
     let newMessage="";
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++)
+    {
           let numberAscii=((word[i].charCodeAt())-65+des)%26+65;
           let lettercipher=""+String.fromCharCode(numberAscii);
-
         newMessage=newMessage+lettercipher;
     }
     return newMessage;
   },
 
-decode:(word,des)=>
+decode:(des,word)=>
   {
   let newMessage="";
   let range=(des%26);
