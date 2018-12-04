@@ -7,57 +7,55 @@
     <title>Caesar Cipher</title>
   </head>
   <body>
-<div id="root">
-      <header class="encabezado">
-              <div class="titulo" id="titulo-content">
-              <h1>Welcome to Bottle Up</h1>
-              </div>
-      </header>
-      <aside class="contenido-lateral">
+    <div id="root">
+     <header class="encabezado">
+       <div class="titulo" id="titulo-content">
+         <h1>Welcome to Bottle Up</h1>
+       </div>
+     </header>
+     <aside class="contenido-lateral">
         <div class="image-message">
           <p>All i can image , it´s all i Do</p>
           <p>Remember dont lose your key</p>
           <p>Copy the key somewhere</p>
           <p>keep secrets</p>
         </div>
-      </aside>
-      <section class="contenido">
-            <div class="instruction-content" id ="instruction">
-               <h1>Hi:</h1>
-              <p>Hey,this page code and decode message's
-              be smart and use it , read the instructions </p>
-              <ol>
-                <li>Read the instructions</li>
-                <li>type you key ,the key must be a number</li>
-                <li>Choose code or decode the message</li>
-              </ol>
-                <button type="button" id="start">Start</button>
-            </div>
-            <div class="contenido2" id="contenidoDos">
-                    <div id="form1">
-                    <div id="clave" class="clave-content">
-                      <label for="moveTo">Key</label>
-                      <input type="number" id="moveTo" min="1"/>
-                    </div>
-                    <div class="message-content" >
-                      <label for="message">Write the message :</label>
-                      <input type="text" id="message"/>
-                    </div>
-                    <div class="buttons-content" >
-                      <button  id="btn-cipher" type="button">Code</button>
-                      <button  id="btn-decipher" type="button">Decode</button>
-                      <button  id="btn-clean" type="button">clean</button>
-
-                    </div>
-                    <div class="message-content" >
-                      <label for="text-result">Result:</label>
-                      <p></p>
-                      <input id="text-result" type="text" />
-                    </div>
-                  </div>
+     </aside>
+     <section class="contenido">
+       <div class="instruction-content" id ="instruction">
+         <p>Hey,this page code and decode message's
+             be smart and use it , read the instructions
+         </p>
+         <ol>
+           <li>Read the instructions</li>
+           <li>type you key ,the key must be a number</li>
+           <li>Choose code or decode the message</li>
+         </ol>
+         <button type="button" id="start">Start</button>
+       </div>
+      <div class="contenido2" id="contenido-dos">
+        <div id="form1">
+          <div id="clave" class="clave-content">
+            <label for="offset">Key</label>
+            <input type="number" id="offset" min="1"/>
           </div>
-</section>
-</div>
+          <div class="message-content" >
+            <label for="message">Write the message :</label>
+            <input type="text" id="message"/>
+          </div>
+          <div class="buttons-content" >
+            <button  id="btn-cipher" type="button">Code</button>
+            <button  id="btn-decipher" type="button">Decode</button>
+            <button  id="btn-clean" type="button">clean</button>
+          </div>
+            <div class="message-content" >
+              <label for="text-result">Result:</label>
+              <input id="text-result" type="text" />
+            </div>
+        </div>
+        </div>
+    </section>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

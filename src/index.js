@@ -1,39 +1,36 @@
-
-
-const btnCipher=document.getElementById('btn-cipher');//CIFRAR
-const btnDecipher=document.getElementById("btn-decipher");//DECIFRAR
-const message=document.getElementById("message");//MENSAJE A CIFRAR
-const moveTo=document.getElementById("moveTo");//DESPLAMIENTO
-const textResult=document.getElementById("text-result");//RESULTADOS
-const buttonStart=document.getElementById("start");//boton de empezar
+const btnCipher=document.getElementById("btn-cipher");
+const btnDecipher=document.getElementById("btn-decipher");
+const message=document.getElementById("message");
+const offset=document.getElementById("offset");
+const textResult=document.getElementById("text-result");
+const buttonStart=document.getElementById("start");
 const buttonClean=document.getElementById("btn-clean");
 
-function manejadorClick(){
-  textResult.value=cipher.encode(parseInt( moveTo.value),message.value);
+function manejadorClick() {
+  textResult.value=cipher.encode(parseInt( offset.value),message.value);
 }
 function manejadorClick2() {
-  textResult.value=cipher.decode(parseInt( moveTo.value),message.value);
+  textResult.value=cipher.decode(parseInt( offset.value),message.value);
 }
 
-function manejadorClick3(){
+function manejadorClick3() {
   showCipherView()
 }
 function manejadorClick4() {
   clean()
 }
-function showCipherView()
-{
+//*manejando el Dom*//
+function showCipherView(){
   document.getElementById("instruction").style.display="none";
-  document.getElementById("titulo-content").innerHTML="  <h1> Bottle Up  </h1>";
-  document.getElementById("contenidoDos").style.display="block";
+  document.getElementById("titulo-content").innerHTML=" <h1> Bottle Up </h1> ";
+  document.getElementById("contenido-dos").style.display="block";
 }
 function clean() {
   document.getElementById("message").value="";
-  document.getElementById("moveTo").value="";
+  document.getElementById("offest").value="";
   document.getElementById("text-result").value="";
 }
-
-
+//*Eventos anexados a funciones*//
 btnCipher.addEventListener('click', manejadorClick);
 btnDecipher.addEventListener('click', manejadorClick2);
 buttonStart.addEventListener('click',manejadorClick3);
