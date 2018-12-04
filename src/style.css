@@ -11,11 +11,11 @@ margin: 0;
     margin:0;
   }
 
-  .encabezado,.contenido,.contenido-lateral,.pie-pagina
+  .encabezado,.contenido,.contenido-lateral
   {
-    padding: 1em 2em;
+    padding: 1.8em 2em;
   }
-  .contenido,.contenido-lateral,.pie-pagina
+  .contenido,.contenido-lateral
   {
     float: left;
     box-sizing: border-box;
@@ -23,12 +23,13 @@ margin: 0;
 .contenido2
 {
   display: none;
+  margin-top: 0;
 }
-
   .encabezado
   {
     background-color:grey;
     height: 100px;
+
     font-family: Chakra Petch,serif;
     text-align: center;
     color: white;
@@ -36,7 +37,7 @@ margin: 0;
 
   .contenido/*instrucciones*/
   {
-    margin-top: 1em;
+    margin-top: 0.5em;
     width: 60%;
     font-family: Chakra Petch,serif;
     background-color: white;
@@ -53,6 +54,8 @@ margin: 0;
     height: 500px;
     background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009/dn8hj2o/aw0ogrmel/tumblr_static_437i1aqm00qo4kk8kgwoo8w4k_640_v2.jpg);
     background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin: 0;
   }
 
   .pie-pagina
