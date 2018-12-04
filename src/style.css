@@ -1,53 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee|Chakra+Petch|Charmonman|Neucha|Sriracha|Unlock');
-/*body{
-background-color:white;
-background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009/dn8hj2o/aw0ogrmel/tumblr_static_437i1aqm00qo4kk8kgwoo8w4k_640_v2.jpg);
-background-repeat: no-repeat;
-margin-top: 0px;
-margin: 0;
-  }*/
-  body
-  {
-    margin:0;
-  }
-
-  .encabezado,.contenido,.contenido-lateral
-  {
+body {
+    margin: 0;
+}
+.encabezado,.contenido,.contenido-lateral {
     padding: 1.8em 2em;
-  }
-  .contenido,.contenido-lateral
-  {
+}
+.contenido,.contenido-lateral {
     float: left;
     box-sizing: border-box;
-  }
-.contenido2
-{
+}
+.contenido2 {
   display: none;
   margin-top: 0;
 }
-  .encabezado
-  {
-    background-color:rgb(31, 31, 0.5);
+.encabezado {
+    background-color: rgb(31, 31, 0.5);
     height: 100px;
     font-family: Bungee,serif;
     text-align: center;
     color: white;
-  }
-
-  .contenido/*instrucciones*/
-  {
+}
+  /*instrcccions*/
+.contenido {
     margin-top: 0.5em;
     width: 60%;
     font-family: Chakra Petch,serif;
     background-color: white;
     align-content: center;
   }
-.instruction-content
-  {
-    font-family: Chakra Petch,serif;
+.instruction-content {
+   font-family: Chakra Petch,serif;
   }
-  .contenido-lateral/*IMAGEN*/
-  {
+  .contenido-lateral {
     width: 40%;
     background-color: rgb(163,163,113);
     height: 500px;
@@ -55,25 +39,20 @@ margin: 0;
     background-repeat: no-repeat;
     margin-bottom: 0;
     margin: 0;
-  }
-
-  .pie-pagina
-  {
+}
+.pie-pagina {
     width: 100%;
     height: 50px;
     background-color: #000;
-  }
-  .form1
-  {
-    display: block;
-}
-  .image-message
-  {
-font-family:Sriracha,serif;
+    }
+.form1 {
+   display: block;
+ }
+.image-message {
+   font-family:Sriracha,serif;
   }
 /*por iD*/
-#start
-{
+#start {
   background-color:#F08D40;
   padding: 20px;
   width: 20%;
@@ -86,27 +65,24 @@ font-family:Sriracha,serif;
   border-radius: 1em;
   font-weight: bold;
   cursor: pointer;
-
 }
-#btn-cipher,#btn-decipher{
-margin-top: 1em;
-font-family:Neucha,serif;
-background-color: rgb(227, 120,30);
-border: none;
-color: white;
-padding: 10px;
-width: 150px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 14px;
-margin-left: : 10px;
-cursor: pointer;
-border-radius: 5px
-
+#btn-cipher,#btn-decipher {
+  margin-top: 1em;
+  font-family:Neucha,serif;
+  background-color: rgb(227, 120,30);
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: : 10px;
+  cursor: pointer;
+  border-radius: 5px
 }
-#btn-clean
-{
+#btn-clean {
   margin-top: 1em;
   background-color:rgb(31, 31, 80);
   border: none;
@@ -122,62 +98,46 @@ border-radius: 5px
   border-radius: 5px;
   font-family:Neucha,serif;
 }
-#message,#text-result
-{
-margin-top: 0.5em;
-width: 60%;
-padding: 5%;
-height: 90%
-font-family: Chakra Petch,serif;
+#message,#text-result {
+  margin-top: 0.5em;
+  width: 60%;
+  padding: 5%;
+  height: 90%
+  font-family: Chakra Petch,serif;
 }
-
-#moveTo
-{
-width: 10%;
-padding: 10px;
-font-family: Chakra Petch,serif;
+#offset {
+  width: 10%;
+  padding: 10px;
+  font-family: Chakra Petch,serif;
 }
-
-
 /*etiquetas*/
-label
-{
+label {
   display: block;
   margin: 1em;
 }
-
-
+/*medias queries*/
 @media screen and (max-width: 780px)and (max-width: 1024px){
 {
-  .titulo
-  {
+  .titulo {
     width: 40%;
   }
-  .message-content{
+  .message-content {
     width: 40%;
     background-color:green;
   }
-  .instruction-content
-  {
+  .instruction-content {
     margin-left: 0;
   }
+/*media queries*/
 @media screen and(min-width:360px)and(max-width:640px) {
-#btn-clean{
+#btn-clean {
   width: 100%;
   background-color: white;
 }
 }
-@media screen and (min-width:480px)and(max-width:780px)
-{
-.titulo{
+@media screen and (min-width:480px)and(max-width:780px) {
+.titulo {
   font-size: 10px;
   color:green;
 }
-
-}
-
-@media screen and(max-width:480px)
-{
-
-
 }
