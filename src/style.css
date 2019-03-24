@@ -22,7 +22,7 @@ body {
 }
   /*instrcccions*/
 .contenido {
-    margin-top: 0.5em;
+    margin-top: 10%;
     width: 60%;
     font-family: Chakra Petch,serif;
     background-color: white;
@@ -32,13 +32,14 @@ body {
    font-family: Chakra Petch,serif;
   }
   .contenido-lateral {
+    margin-top: 10%;
     width: 40%;
-    background-color: rgb(163,163,113);
-    height: 500px;
-    background-image: url(https://static.tumblr.com/3869f2da0f3d67ee38c28a1380ac3009/dn8hj2o/aw0ogrmel/tumblr_static_437i1aqm00qo4kk8kgwoo8w4k_640_v2.jpg);
+    height: 600px;
+    background-image: url(https://assets.trome.pe/files/ec_article_multimedia_gallery/uploads/2018/02/27/5a95ae3842633.jpeg);
     background-repeat: no-repeat;
+    background-size: 100%;
     margin-bottom: 0;
-    margin: 0;
+   
 }
 .pie-pagina {
     width: 100%;
