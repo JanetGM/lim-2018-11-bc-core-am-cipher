@@ -5,8 +5,6 @@ const offset=document.getElementById("offset");
 const textResult=document.getElementById("text-result");
 const buttonStart=document.getElementById("start");
 const buttonClean=document.getElementById("btn-clean");
-const buttonBack= document.getElementById("btn-back");
-
 
 function manejadorClick() {
   textResult.value=cipher.encode(parseInt( offset.value),message.value);
@@ -23,10 +21,7 @@ function manejadorClick4() {
 }
 
 
-function manejadorClick5 () {
-showInitialView();
 
-}
 //*manejando el Dom*//
 function showCipherView(){
   document.getElementById("instruction").style.display="none";
@@ -45,11 +40,9 @@ function clean() {
   document.getElementById("text-result").value="";
 }
 
-function showInitialView (){
-}
+
 //*Eventos anexados a funciones*//
 btnCipher.addEventListener('click', manejadorClick);
 btnDecipher.addEventListener('click', manejadorClick2);
 buttonStart.addEventListener('click',manejadorClick3);
 buttonClean.addEventListener('click',manejadorClick4);
-buttonBack.addEventListener('click',manejadorClick5);
