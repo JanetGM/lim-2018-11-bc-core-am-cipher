@@ -59,9 +59,9 @@ body {
   background-color: rgba(56, 75, 92, 0.466);
 }
 #text-result{
-  width: 100%;
+  width: 80%;
+  padding: 15%;
   height: 100%;
-  padding: 110px;
   background-color: rgba(56, 75, 92, 0.466);
 
 }
