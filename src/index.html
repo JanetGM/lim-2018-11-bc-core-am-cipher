@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css" />
     <title>Caesar Cipher</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="root">
@@ -13,45 +19,58 @@
          <h1>Welcome to Bottle Up</h1>
        </div>
      </header>
-     <aside class="contenido-lateral">
-        <div class="image-message">
+     <aside class="contenido-lateral " id= "aside">
+        <div class="image-message ">
           <p>All i can image , it´s all i Do</p>
           <p>Remember dont lose your key</p>
           <p>Copy the key somewhere</p>
           <p>keep secrets</p>
         </div>
      </aside>
-     <section class="contenido">
-       <div class="instruction-content" id ="instruction">
-         <p>Hey,this page code and decode message's
+     <section class="contenido" id ="section">
+       <div class="instruction-content " id ="instruction">
+         <p class="">Hey,this page code and decode message's
              be smart and use it , read the instructions
          </p>
          <ol>
-           <li>Read the instructions</li>
-           <li>type you key ,the key must be a number</li>
-           <li>Choose code or decode the message</li>
+           <li class="animated t delay-1s mt-3">Read the instructions</li>
+           <li class="t delay-2s mt-3">type you key ,the key must be a number</li>
+           <li class="t delay-3s mt-3">Choose code or decode the message</li>
          </ol>
-         <button type="button" id="start">Start</button>
+         <button type="button" id="start" class="btn  btn-outline-primary btn-lg offset-2  t delay-4s  mt-3">Start</button>
        </div>
-      <div class="contenido2" id="contenido-dos">
+
+      <div class="contenido2 " id="contenido-dos">        
         <div id="form1">
-          <div id="clave" class="clave-content">
-            <label for="offset">Key</label>
-            <input type="number" id="offset" min="1"/>
-          </div>
-          <div class="message-content" >
-            <label for="message">Write the message :</label>
-            <input type="text" id="message"/>
-          </div>
-          <div class="buttons-content" >
-            <button  id="btn-cipher" type="button">Code</button>
-            <button  id="btn-decipher" type="button">Decode</button>
-            <button  id="btn-clean" type="button">clean</button>
-          </div>
-            <div class="message-content" >
-              <label for="text-result">Result:</label>
-              <input id="text-result" type="text" />
-            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-5">
+                      <div id="clave" class="clave-content mt-0">
+                          <p for="offset">Key</p>
+                          <input type="number" id="offset" min="1"/>
+                        </div>
+                        <div class="message-content mt-2" >
+                            <p for="message">Write the message :</p>
+                            <input type="text" id="message"/>
+                          </div>
+                  </div>
+                  <div class="col">
+                      <div class="buttons-content offset-1" >
+                          <button  class="btn btn-outline-primary mt-3" id="btn-cipher" type="button">Code</button>
+                          <button  class="btn btn-outline-danger mt-3" id="btn-decipher" type="button">Decode</button>
+                          <button  class="btn btn-outline-success mt-3" id="btn-clean" type="button">clean</button>
+                          <a href="home.html" class="btn btn-outline-warning mt-3" id="btn-back" >Back</a>
+                        </div>
+                  </div>
+                  <div class="col-5">
+                      <div class="message-content offset-5" >
+                          <p for="text-result">Result:</p>
+                          <input id="text-result" type="text" />
+                        </div>
+                  </div>
+                </div>
+              </div>
+     
         </div>
         </div>
     </section>
