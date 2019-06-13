@@ -10,7 +10,9 @@ function manejadorClick() {
   textResult.value=cipher.encode(parseInt( offset.value),message.value);
 }
 function manejadorClick2() {
+ 
   textResult.value=cipher.decode(parseInt( offset.value),message.value);
+  console.log(textResult.value);
 }
 
 function manejadorClick3() {
