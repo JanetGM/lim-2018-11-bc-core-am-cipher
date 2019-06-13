@@ -32,6 +32,8 @@ function showCipherView(){
   document.getElementById("titulo-content").innerHTML=" <h1> Bottle Up </h1> ";
   document.getElementById("titulo-content").style.backgroundColor="black"
   document.getElementById("contenido-dos").style.display="block";
+  document.getElementById("text-result").style.color="white";
+
   document.body.style.backgroundColor='black';
 }
 function clean() {
